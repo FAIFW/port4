@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmetology</title>
+    <link rel="icon" href="./src/img/favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="sk-circle-fade">
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+        <div class="sk-circle-fade-dot"></div>
+      </div>
+    </div>
+
+    <div class="modal modal_closed" id="modal"></div>
+
+    <header class="header">
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <div class="container">
+          <ul class="nav__list">
+            <li>
+              <a
+                href="#first"
+                class="nav__link nav__link_active js-header-close"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a href="#certificates" class="nav__link js-header-close"
+                >Сертификаты</a
+              >
+            </li>
+            <li>
+              <a href="#whyMe" class="nav__link js-header-close"
+                >Почему именно я?</a
+              >
+            </li>
+            <li>
+              <a href="#reviews" class="nav__link js-header-close">Отзывы</a>
+            </li>
+            <li>
+              <a href="#results" class="nav__link js-header-close"
+                >Результаты</a
+              >
+            </li>
+            <li>
+              <a href="#faq" class="nav__link js-header-close"
+                >Популярные вопросы</a
+              >
+            </li>
+            <li>
+              <a href="#footer" class="nav__link js-header-close">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="contact-badge">
+            <div class="socials">
+              <a href="##" class="socails__item"
+                ><img src="./src/img/header/whatsapp.svg" alt="what's up"
+              /></a>
+              <a href="##" class="socails__item"
+                ><img src="./src/img/header/telegramm.svg" alt="телеграм"
+              /></a>
+              <a href="##" class="socails__item"
+                ><img src="./src/img/header/instagram.svg" alt="Инстаграм"
+              /></a>
+              <a href="##" class="socails__item"
+                ><img src="./src/img/header/vk.svg" alt="Вконтакте"
+              /></a>
+            </div>
+            <a class="contact-badge__item js-header-close" href="##">
+              <img
+                class="contact-badge__icon"
+                src="./src/img/header/location.svg"
+                alt="найти меня"
+              />
+              <p>
+                г. Ульяновск, Ленинский район ул. Спасская 19/9 бизнес центр ,
+                гостиница Венец
+              </p>
+            </a>
+            <a class="contact-badge__gift">
+              <div>
+                <img src="./src/img/gift.png" alt="подарок" />
+              </div>
+              <p>Не забудь подарок!</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first" id="first">
+        <div class="first__title">
+          <h1 class="h1">
+            Косметическая клиника<br /><span>пре<span>о</span>бражение</span>
+          </h1>
+          <p class="first__title-text">ул. Спасская 19/9 бизнес центр</p>
+        </div>
+
+        <div class="first__badge">
+          <span>Олеся Хайруллова</span><br />
+          <span>Косметолог-эстетист-инъекционист</span>
+        </div>
+        <div class="first__deco"></div>
+
+        <div class="first__girl">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./src/img/first/girl.webp"
+              alt="Олеся Хайруллова"
+            />
+            <source
+              type="image/jpg"
+              srcset="./src/img/first/girl.png"
+              alt="Олеся Хайруллова"
+            />
+            <img
+              class="first__girl-img"
+              src="./src/img/first/girl.png"
+              alt="Олеся Хайруллова"
+            />
+          </picture>
+        </div>
+
+        <div class="first__footer">
+          <div class="btnsBlock">
+            <a class="dark" href="#footer">
+              <span>бесплатная консультация</span>
+            </a>
+          </div>
+
+          <p class="first__footer-text">
+            вылечу не только несовершенства, но и поддержу красоту и здоровье
+            вашего лица
+          </p>
+        </div>
+      </section>
+
+      <section class="sertificates" id="certificates">
+        <div class="container">
+          <h2 class="h2">Сертификаты</h2>
+          <p class="sertificates__title">
+            Регулярно повышаю квалификацию и&nbsp;обучаюсь
+          </p>
+          <div class="sertificates__slider">
+            <div class="swiper sertificates__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/1.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/1.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/1.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/2.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/2.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/2.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/3.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/3.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/3.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/4.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/4.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/4.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/5.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/5.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/5.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/6.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/6.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/6.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/7.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/7.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/7.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/8.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/8.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/8.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/sertificates/9.webp"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/sertificates/9.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                    <img
+                      src="./src/img/sertificates/9.jpg"
+                      alt="мои сертификаты и дипломы"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="swipeIcon" src="./src/img/swipe.svg" alt="слайдер" />
+        </div>
+      </section>
+
+      <section class="whyMe" id="whyMe">
+        <div class="container">
+          <h2 class="h2">Почему именно я?</h2>
+          <div class="whyMe__content">
+            <ul>
+              <li>
+                <img src="./src/img/whyMe/1.svg" alt="" />
+                <p>
+                  <span>Работаю</span> с&nbsp;каждым запросом
+                  <span>индивидуально</span>, подбирая комплекс продукт под
+                  особенности клиента
+                </p>
+              </li>
+              <li>
+                <img src="./src/img/whyMe/2.svg" alt="" />
+                <p>Все процедуры проходят <span>безболезненно</span></p>
+              </li>
+              <li>
+                <img src="./src/img/whyMe/3.svg" alt="" />
+                <p>
+                  Я&nbsp;отвечаю за&nbsp;<span>безопасность</span>
+                  и&nbsp;видимый <span>результат</span>
+                </p>
+              </li>
+              <li>
+                <img src="./src/img/whyMe/4.svg" alt="" />
+                <p>
+                  Все <span>препараты</span> и&nbsp;<span>косметика</span>,
+                  используемые в&nbsp;работе,
+                  <span>сертифицированы</span> и&nbsp;хранятся
+                  в&nbsp;соответствии с&nbsp;<span>нормами</span>
+                </p>
+              </li>
+              <li>
+                <img src="./src/img/whyMe/5.svg" alt="" />
+                <p>
+                  <span>Новейшее оборудование</span> и&nbsp;приятная атмосфера
+                  в&nbsp;студии
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="h2">Отзывы</h2>
+          <p class="reviews__title">Посмотрите, что обо мне говорят клиенты</p>
+          <div class="reviews__slider">
+            <div class="swiper reviews__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/1.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/1.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/1.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/2.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/2.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/2.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/3.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/3.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/3.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/4.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/4.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/4.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/5.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/5.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/5.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/6.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/6.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/6.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/7.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/7.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/7.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/8.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/8.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/8.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/9.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/9.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/9.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/reviews/10.webp"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/reviews/10.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                    <img
+                      src="./src/img/reviews/10.jpg"
+                      alt="что обо мне говорят клиенты"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="swipeIcon" src="./src/img/swipe.svg" alt="слайдер" />
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="h2">Услуги</h2>
+          <h3 class="services__title">Выбери место процедуры</h3>
+          <div class="btnsBlock">
+            <button class="dark" id="toFace"><span>лицо</span></button>
+            <button class="light" id="toHand"><span>руки</span></button>
+          </div>
+          <div class="services__main">
+            <div class="services__face">
+              <!--
+                              <picture class="services__face-picture">
+                <source
+                  type="image/webp"
+                  media="(min-width: 1023px)"
+                  srcset="./src/img/services/face-1024.webp"
+                  alt="процедуры для лица"
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1023px)"
+                  srcset="./src/img/services/face-1024.png"
+                  alt="процедуры для лица"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 767px)"
+                  srcset="./src/img/services/face-320.webp"
+                  alt="процедуры для лица"
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 767px)"
+                  srcset="./src/img/services/face-320.png"
+                  alt="процедуры для лица"
+                />
+                <img
+                  src="./src/img/services/face-320.png"
+                  alt="процедуры для лица"
+                />
+              </picture>
+                
+              -->
+              <img
+                class="services__face-picture"
+                src="./src/img/services/face-320.png"
+                alt="процедуры для лица"
+              />
+
+              <div class="services__face-btns">
+                <button class="toForehead"></button>
+                <button class="toMesotherapy"></button>
+                <button class="toEye"></button>
+                <button class="toLeftCheek"></button>
+                <button class="toNose"></button>
+                <button class="toLips"></button>
+              </div>
+            </div>
+
+            <div class="services__hand hideContent">
+              <button
+                class="modalHand__btn"
+                onclick="renderHandMain2()"
+              ></button>
+              <img src="./src/img/services/hand.png" alt="руки" />
+            </div>
+
+            <div class="services__guide">
+              <h3 class="h3">Забери свой подарок!</h3>
+              <a class="contact-badge__gift">
+                <div>
+                  <img src="./src/img/gift.png" alt="подарок" />
+                </div>
+                <p>Гайд<br />Как избавиться от черных точек</p>
+              </a>
+            </div>
+
+            <div class="services__consultation">
+              <div class="btnsBlock">
+                <a class="dark" href="#footer">бесплатная консультация</a>
+              </div>
+
+              <ul class="services-list">
+                <li class="services-list__title">На консультации мы с вами:</li>
+                <li class="services-list__item">
+                  Выявим и обсудим вашу проблему
+                </li>
+                <li class="services-list__item">Выберем нужную процедуру</li>
+                <li class="services-list__item">
+                  Подберем необходимый препарат
+                </li>
+                <li class="services-list__item">
+                  Дам рекомендации по домашнему уходу
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results" id="results">
+        <div class="container">
+          <h2 class="h2">Результаты</h2>
+          <p class="results__title">Фотографии моих довольных клиентов</p>
+          <div class="results__slider">
+            <div class="swiper results__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/1.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/1.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/1.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/2.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/2.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/2.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/3.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/3.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/3.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/4.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/4.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/4.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/5.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/5.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/5.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/6.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/6.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/6.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/7.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/7.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/7.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/8.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/8.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/8.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/9.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/9.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/9.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/10.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/10.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/10.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/11.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/11.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/11.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/12.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/12.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/12.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="./src/img/results/13.webp"
+                      alt="результаты моей работы"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./src/img/results/13.jpg"
+                      alt="результаты моей работы"
+                    />
+                    <img
+                      src="./src/img/results/13.jpg"
+                      alt="результаты моей работы"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="swipeIcon" src="./src/img/swipe.svg" alt="слайдер" />
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2 class="faq__title">Популярные вопросы</h2>
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">Что нельзя после ботокса?</h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              Употребление алкоголя (за 3 суток до процедуры)
+            </li>
+            <li class="faq__list-item">Занятие спортом (3-4 суток)</li>
+            <li class="faq__list-item">
+              Принимать горизонтальное положение после процедуры в течение 5
+              часов
+            </li>
+            <li class="faq__list-item">Посещение сауны и бани (5-7 суток)</li>
+            <li class="faq__list-item">Ходить на пляж и солярий (5-7 суток)</li>
+          </ul>
+        </div>
+
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">
+              Как часто можно делать нитевой лифтинг?
+            </h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              При установке рассасывающихся нитей, сроки повторной процедуры
+              ориентируются на период их <b> растворения + 1-2 года</b>. Вновь
+              прибегать к нитевому лифтингу в конкретной зоне можно через 2,5-3
+              года.
+            </li>
+            <li class="faq__list-item">
+              Если пациентка не довольна результатом предыдущей подтяжки или
+              желает скорректировать другую зону, армирование можно провести
+              через 1,5-2 месяца после первой процедуры
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">
+              Когда появляется эффект от мезонитей на лице?
+            </h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              Выраженный результат достигается уже <b>через 14 дней</b>
+              после процедуры тредлифтинга и сохраняется в течение 1,5–2 лет.
+              Методика подходит людям с очень чувствительной кожей. Мельчайшие
+              гематомы в точках введения иглы проходят через 1–2 дня
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">
+              Как часто нужно делать чистку лица ?
+            </h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              Не менее одного раза в месяц Если вы посетили специалиста впервые,
+              то желательно провести полноценный очищающий курс – в среднем он
+              занимает около 5-8 сеансов. После окончания курса подбирается
+              индивидуальная частота обращения, которая обычно составляет один
+              раз в месяц или 1-2 недели
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">
+              Из скольки процедур состоит курс карбокситерапии?
+            </h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              <b
+                >Рекомендуем курс - 5 процедур, 1 раз в 7 дней (эффект
+                накопительный).</b
+              >
+              Процедура основана на внедрение во внутренние слои дермы
+              углекислого газа. CO2 заставляет организм подключить все имеющиеся
+              резервы для борьбы с ним. Кровеносная система начинает работать
+              более активно, обеспечивая мощный приток кислорода к клеткам, что
+              приводит к их оздоровлению и омоложению
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">Что даёт пилинг лица?</h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              При пилинге вместе с роговым слоем кожи полностью или частично
+              удаляются мелкие морщинки, сглаживаются неровности кожи, удаляются
+              продукты деятельности сальных и потовых желёз, остатки макияжа.
+            </li>
+            <li class="faq__list-item">
+              Происходит выведению из кожи накопленных свободных радикалов,
+              стимулируются процессы регенерации кожи, облегчается отторжение её
+              рогового слоя и создаются условия для подготовки кожи к восприятию
+              косметических масок и кремов
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">
+              Какие реакции номальные после пилинга и через сколько виден
+              эффект?
+            </h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-title">
+              Эффект виден на 4-5 день После процедуры в норме наблюдаются:
+            </li>
+            <li class="faq__list-item">излишняя стянутость кожи</li>
+            <li class="faq__list-item">покраснение</li>
+            <li class="faq__list-item">шелушение</li>
+            <li class="faq__list-item">отечность</li>
+            <li class="faq__list-item">дискомфорт и жжение</li>
+            <li class="faq__list-item">временная склонность к пигментации</li>
+          </ul>
+        </div>
+        <div class="faq__question">
+          <div class="faq__content">
+            <div class="faq__pluse-btn"></div>
+            <h3 class="faq__switch text-center">
+              Через сколько дней действует филлер в носогубки и через сколько
+              можно заниматься спортом?
+            </h3>
+          </div>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              <b>Результат</b> после филлеров виден <b>сразу</b> После введения
+              геля на коже могут появиться небольшие отеки и синяки – это
+              нормально, они самостоятельно проходят через несколько дней.
+              Спустя неделю после процедуры можно видеть тот результат, который
+              <b>сохранится на несколько месяцев</b> – и делать выводы о
+              необходимости повторной коррекции или отсутствии такой
+              необходимости
+            </li>
+            <li class="faq__list-item">
+              <b>В течение первых дней</b> после введения филлеров исключите
+              физические нагрузки
+            </li>
+          </ul>
+        </div>
+        <button id="showMoreButton">Показать еще</button>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h2 class="h2">Контакты</h2>
+        <p class="footer__title">Записаться на сеанс можно через:</p>
+
+        <div class="contact-badge">
+          <div class="socials">
+            <a href="##" class="socails__item"
+              ><img src="./src/img/header/whatsapp.svg" alt="what's up"
+            /></a>
+            <a href="##" class="socails__item"
+              ><img src="./src/img/header/telegramm.svg" alt="телеграм"
+            /></a>
+
+            <a href="##" class="socails__item"
+              ><img src="./src/img/header/instagram.svg" alt="Инстаграм"
+            /></a>
+            <a href="##" class="socails__item"
+              ><img src="./src/img/header/vk.svg" alt="Вконтакте"
+            /></a>
+          </div>
+          <a class="contact-badge__item js-header-close" href="##">
+            <img
+              class="contact-badge__icon"
+              src="./src/img/header/location.svg"
+              alt="найти меня"
+            />
+            <p>
+              г. Ульяновск, Ленинский район ул. Спасская 19/9 бизнес центр ,
+              гостиница Венец
+            </p>
+          </a>
+
+          <a class="contact-badge__gift">
+            <div>
+              <img src="./src/img/gift.png" alt="подарок" />
+            </div>
+            <p>Не забудь подарок!</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/script/dataInjections.js"></script>
+    <script src="./src/script/script.js"></script>
+  </body>
+</html>
