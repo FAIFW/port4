@@ -436,7 +436,7 @@ body {
   align-items: center;
 }
 .modal .service-block__left {
-  width: 65%;
+  width: 70%;
 }
 .modal .service-block__h3 {
   font-size: 1.2857142857rem;
@@ -794,7 +794,6 @@ body {
 
 .header {
   width: 100%;
-  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -808,10 +807,16 @@ body {
 }
 .header a {
   text-decoration: none;
+  color: #453b4b;
+}
+.header a:active {
+  color: #8f8d90;
+}
+.header a:visited {
+  color: #453b4b;
 }
 .header .nav {
   height: 100vh;
-  padding-top: 80px;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -829,6 +834,7 @@ body {
 .header .nav_active {
   transform: translateY(0vh);
   transition: all 0.6s;
+  padding-top: 45px;
 }
 .header .nav__list {
   height: -moz-max-content;
@@ -1167,10 +1173,6 @@ body {
   display: inline-block;
   width: 100%;
   height: 43vh;
-}
-.services .services__face-picture img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   vertical-align: middle;
@@ -1524,6 +1526,7 @@ body {
 }
 .modalHand2 .service-block {
   padding: 1em 0em;
+  animation: appearance linear 0.4s;
 }
 .modalHand2__slider img {
   width: 100%;
@@ -1537,11 +1540,15 @@ body {
 
 .modalInjections {
   overflow-y: auto;
+  animation: appearance linear 0.4s;
 }
 .modalInjections .btnsBlock {
   gap: 1em;
 }
 
+.modalMasks {
+  animation: appearance linear 0.4s;
+}
 .modalMasks .btnsBlock {
   gap: 1em;
 }
@@ -1558,6 +1565,9 @@ body {
   margin: 0 auto;
 }
 
+.modalMesotherapy {
+  animation: appearance linear 0.4s;
+}
 .modalMesotherapy .service-block {
   padding: 1em 0em;
 }
@@ -1571,6 +1581,9 @@ body {
   margin: 0 auto;
 }
 
+.modalNosetherapy {
+  animation: appearance linear 0.4s;
+}
 .modalNosetherapy .service-block {
   padding: 1em 0em;
 }
@@ -1584,6 +1597,9 @@ body {
   margin: 0 auto;
 }
 
+.modalLipstherapy {
+  animation: appearance linear 0.4s;
+}
 .modalLipstherapy .service-block {
   padding: 1em 0em;
 }

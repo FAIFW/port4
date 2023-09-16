@@ -22,28 +22,7 @@ const body = document.querySelector('body');
       });
     }, 1000);
   });
-
-  //if (body.children.classList.contains('preloader') && )
 })();
-
-/* auxillary functions which i m going to use in sliders and so on
-function showLoading() {
-  content.forEach((el) => {
-    el.classList.add('hideContent');
-  });
-  document.querySelector('.preloader').classList.remove('preloader_hidden');
-}
-
-function hideLoading() {
-  setTimeout(() => {
-    document.querySelector('.preloader').classList.add('preloader_hidden');
-
-    content.forEach((el) => {
-      el.classList.remove('hideContent');
-    });
-  }, 1000);
-}
-*/
 
 /*                          HEADER                              */
 //'jumping' button due to scrollBar:
@@ -80,7 +59,6 @@ const scrollBarWidth = () => {
     })();
     mobileNav.classList.toggle('nav_active');
     body.classList.toggle('stop-scroll');
-    header.classList.toggle('header_active');
   }
 
   burgerBtn.addEventListener('click', closeHeader);
