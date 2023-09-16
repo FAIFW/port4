@@ -821,15 +821,9 @@ body {
   color: #453b4b;
 }
 .header .nav {
-  height: 100vh;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  z-index: 2;
   transform: translateY(-100vh);
+  opacity: 0;
   transition: all 0.6s;
-  background: url("../img/header/background.jpg") center/cover no-repeat;
 }
 .header .nav .container {
   margin: 0 auto;
@@ -837,10 +831,18 @@ body {
   height: 100%;
 }
 .header .nav_active {
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 2;
+  padding: 50px 0px;
   transform: translateY(0vh);
+  opacity: 1;
   transition: all 0.6s;
-  padding: 45px 0px;
   overflow-y: scroll;
+  background: url("../img/header/background.jpg") center/cover no-repeat;
 }
 .header .nav__list {
   height: -moz-max-content;
@@ -918,6 +920,7 @@ body {
   text-transform: uppercase;
   color: #8569af;
   display: flex;
+  justify-content: center;
 }
 .first__title .h1 span span {
   position: relative;
