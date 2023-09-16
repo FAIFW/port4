@@ -328,10 +328,10 @@ template {
 }
 
 @font-face {
-  font-family: "berold";
-  src: local("Berold"), url("../font/beroldRegular.svg") format("svg"), url("../font/beroldRegular.otf") format("otf"), url("../font/beroldRegular.ttf") format("ttf"), url("../font/beroldRegular.woff") format("woff");
+  font-family: "Berold";
+  src: local("Berold"), url("../font/berold.otf") format("otf"), url("../font/berold.ttf") format("ttf"), url("../font/berold.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "openSans";
@@ -839,7 +839,8 @@ body {
 .header .nav_active {
   transform: translateY(0vh);
   transition: all 0.6s;
-  padding-top: 45px;
+  padding: 45px 0px;
+  overflow-y: scroll;
 }
 .header .nav__list {
   height: -moz-max-content;
@@ -909,12 +910,33 @@ body {
   color: #29073e;
 }
 .first__title .h1 span {
-  font-family: "berold";
+  font-family: "Berold";
   font-size: 2.1428571429rem;
   font-weight: 400;
+  font-style: normal;
   line-height: 3.2142857143rem;
   text-transform: uppercase;
   color: #8569af;
+  display: flex;
+}
+.first__title .h1 span span {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.first__title .h1 span span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  right: 2px;
+  margin: auto;
+  width: 25%;
+  height: 25%;
+  background: url("../img/first/glare.png") center/cover no-repeat;
 }
 .first__title-text {
   font-size: 1rem;

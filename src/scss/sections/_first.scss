@@ -38,13 +38,35 @@
       color: $fontPurpleDark;
 
       span {
-        font-family: 'berold';
+        font-family: 'Berold';
         //font-family: 'berold', 'Playfair Display', serif;
         font-size: rem(30px);
         font-weight: 400;
+        font-style: normal;
         line-height: rem(45px);
         text-transform: uppercase;
         color: $fontTitleColor;
+
+        display: flex;
+
+        span {
+          position: relative;
+          width: max-content;
+          height: max-content;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30%;
+            right: 2px;
+            margin: auto;
+            width: 25%;
+            height: 25%;
+            background: url('../img/first/glare.png') center/cover no-repeat;
+          }
+        }
       }
     }
 
@@ -79,11 +101,6 @@
   }
 
   &__deco {
-    //width: 115px;
-    //height: 285px;
-    //width: 30%;
-    //height: 64%;
-
     width: calc(115px + 115 * ((100vw - 375px) / 393));
     height: calc(285px + 255 * ((100vw - 375px) / 393));
     background: url('../img/first/table.png') center/cover no-repeat;
@@ -104,7 +121,6 @@
     //I add a class for img on purpose due to dense nesting
     &-img {
       width: 60%;
-      //height: 60vh;
       object-fit: contain;
     }
   }

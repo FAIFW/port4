@@ -70,7 +70,6 @@
 
   .nav {
     height: 100vh;
-    //padding-top: 80px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -88,7 +87,8 @@
     &_active {
       transform: translateY(0vh);
       transition: all 0.6s;
-      padding-top: 45px;
+      padding: 45px 0px;
+      overflow-y: scroll;
     }
 
     &__list {

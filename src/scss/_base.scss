@@ -2,14 +2,13 @@
 //font-family: 'Playfair Display', serif;
 
 @font-face {
-  font-family: 'berold';
-  src: local('Berold'), url('../font/beroldRegular.svg') format('svg'),
-    url('../font/beroldRegular.otf') format('otf'),
-    url('../font/beroldRegular.ttf') format('ttf'),
-    url('../font/beroldRegular.woff') format('woff');
-  //font-weight: 400;
+  font-family: 'Berold';
+  src: local('Berold'), url('../font/berold.otf') format('otf'),
+    url('../font/berold.ttf') format('ttf'),
+    url('../font/berold.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  //font-display: swap;
 }
 
 @font-face {
