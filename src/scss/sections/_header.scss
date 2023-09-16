@@ -1,0 +1,121 @@
+.burger {
+  width: 38px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  z-index: 3;
+  overflow: hidden;
+  cursor: pointer;
+
+  span {
+    width: 38px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8569af;
+
+    &:nth-of-type(2) {
+      top: calc(50% - 8px);
+    }
+
+    &:nth-of-type(3) {
+      top: calc(50% + 8px);
+    }
+  }
+
+  &_active {
+    span:nth-of-type(1) {
+      display: none;
+    }
+
+    span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+      transition: transform 0.2s;
+    }
+
+    span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
+      transition: transform 0.2s;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  @include flexy(row);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav {
+    height: 100vh;
+    padding-top: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 2;
+    transform: translateY(-100vh);
+    transition: all 0.6s;
+    background: url('../img/header/background.jpg') center/cover no-repeat;
+
+    .container {
+      @include centry(79.7%);
+      height: 100%;
+    }
+
+    &_active {
+      transform: translateY(0vh);
+      transition: all 0.6s;
+    }
+
+    &__list {
+      height: max-content;
+      padding-bottom: 15px;
+
+      li {
+        padding-bottom: 20px;
+      }
+    }
+
+    &__link {
+      font-size: rem(20px);
+      line-height: rem(23px);
+      font-weight: 600;
+    }
+  }
+
+  .contact-badge {
+    @include flexy(column, space-between);
+    height: 40%;
+    max-width: 320px;
+  }
+}
+
+//mobile menu - orientation 'landscape'
+@media (max-width: 767px) and (orientation: landscape) {
+  .header {
+    .nav {
+      &_active {
+        height: 100vh;
+        overflow-y: scroll;
+      }
+    }
+    .contact-badge {
+      height: 220px;
+    }
+  }
+}

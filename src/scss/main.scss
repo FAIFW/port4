@@ -1,0 +1,33 @@
+// Base
+@import './normalize';
+@import './vars';
+@import './mixins';
+@import './functions';
+@import './base';
+
+//Components
+@import './components/preloader';
+@import './components/contactBadge';
+@import './components/h2';
+@import './components/btnsBlock';
+@import './components/servicesList';
+@import './components/injectionCard';
+
+// Sections
+@import './sections/header';
+@import './sections/first';
+@import './sections/sertificates';
+@import './sections/whyMe';
+@import './sections/reviews';
+@import './sections/services';
+@import './sections/results';
+@import './sections/faq';
+@import './sections/footer';
+
+//  Modals
+@import './modal/modalHand2';
+@import './modal/modalInjections';
+@import './modal/modalMasks';
+@import './modal/modalMesotherapy';
+@import './modal/modalNosetherapy';
+@import './modal/modalLipstherapy';

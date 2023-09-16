@@ -1,0 +1,53 @@
+.footer {
+  padding: 2.5em 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4%;
+    left: 0;
+
+    width: 100px;
+    height: 160px;
+
+    background: url('../img/footer/decoLeft.png') center/cover no-repeat;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 60px;
+    height: 90px;
+
+    background: url('../img/footer/decoRight.png') center/contain no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .h2 {
+    padding-bottom: 1.5em;
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .contact-badge {
+    padding-top: 1em;
+    height: 235px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .footer {
+    .container {
+      width: 50%;
+    }
+  }
+}

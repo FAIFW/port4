@@ -1,0 +1,17 @@
+.modalLipstherapy {
+  .service-block {
+    padding: 1em 0em;
+  }
+
+  &__slider {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .swipeIcon {
+    padding: 1em 0em;
+    margin: 0 auto;
+  }
+}
