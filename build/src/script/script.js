@@ -151,7 +151,6 @@ const servicesWidth = () => {
     const img = document.querySelector('.services__face');
     //width of the line is 1/4 of the picture height
     let signWidth = Math.round((img.offsetHeight / 100) * 23);
-
     document.documentElement.style.setProperty(
       '--faceSignWidth',
       `${signWidth + 'px'}`,
@@ -165,8 +164,10 @@ const servicesWidth = () => {
 
 //due to loader shall be hidden in 1000ms after window.loaded so here is a crutch, for services' signs on the face:
 window.onload = setTimeout(() => {
-  servicesWidth();
-}, 1500);
+  if (document.documentElement.style.getPropertyValue('--faceSignWidth') == 0) {
+    servicesWidth();
+  }
+}, 2500);
 
 (function () {
   const toFaceBtn = document.getElementById('toFace');
