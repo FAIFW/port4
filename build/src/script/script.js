@@ -145,29 +145,26 @@ const swiperResults = new Swiper('.results__swiper', {
 });
 
 /*                          SERVICES                           */
-const servicesWidth = () => {
-  function previousWidthCalc() {
-    //I will define line under the button in respect of picture's size which is stabled by 43vh
-    const img = document.querySelector('.services__face');
-    //width of the line is 1/4 of the picture height
-    let signWidth = Math.round((img.offsetHeight / 100) * 23);
-    document.documentElement.style.setProperty(
-      '--faceSignWidth',
-      `${signWidth + 'px'}`,
-    );
+
+const faceImg = document.querySelector('.services__face');
+
+function prevImgHeight() {
+  let signWidth = Math.round((faceImg.offsetHeight / 100) * 23);
+  document.documentElement.style.setProperty(
+    '--faceSignWidth',
+    `${signWidth + 'px'}`,
+  );
+}
+
+window.addEventListener('resize', prevImgHeight);
+
+window.load = setTimeout(() => {
+  prevImgHeight();
+
+  if (!faceImg.offsetHeight) {
+    prevImgHeight();
   }
-
-  previousWidthCalc();
-
-  window.addEventListener('resize', previousWidthCalc);
-};
-
-//due to loader shall be hidden in 1000ms after window.loaded so here is a crutch, for services' signs on the face:
-window.onload = setTimeout(() => {
-  if (document.documentElement.style.getPropertyValue('--faceSignWidth') == 0) {
-    servicesWidth();
-  }
-}, 2500);
+}, 2000);
 
 (function () {
   const toFaceBtn = document.getElementById('toFace');
@@ -202,31 +199,16 @@ const listElements = document.querySelectorAll('.faq__list');
 
 switchElements.forEach(function (switchElement, index) {
   switchElement.addEventListener('click', function () {
-    toggleList(index);
+    // Переключаем состояние текущего элемента
+    listElements[index].classList.toggle('show');
     imgElements[index].classList.toggle('rotated');
   });
 });
-
 imgElements.forEach(function (imgElement, index) {
   imgElement.addEventListener('click', function () {
-    toggleList(index);
-    imgElement.classList.toggle('rotated');
-  });
-});
-
-function toggleList(index) {
-  listElements.forEach(function (listElement, listIndex) {
-    if (listIndex === index) {
-      listElement.classList.toggle('show');
-    } else {
-      listElement.classList.remove('show');
-    }
-  });
-}
-
-window.addEventListener('resize', function () {
-  listElements.forEach(function (listElement) {
-    listElement.classList.add('show');
+    // Переключаем состояние текущего элемента
+    listElements[index].classList.toggle('show');
+    imgElements[index].classList.toggle('rotated');
   });
 });
 

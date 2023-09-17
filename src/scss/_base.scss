@@ -72,6 +72,7 @@ body {
   width: 100%;
   //this shal be added for the modal's adequate scroll:
   height: 100vh;
+  min-height: -webkit-fill-available;
   z-index: 4;
   background-color: white;
   padding: 1.5em 0em;
