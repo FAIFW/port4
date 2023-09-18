@@ -146,9 +146,8 @@ const swiperResults = new Swiper('.results__swiper', {
 
 /*                          SERVICES                           */
 
-const faceImg = document.querySelector('.services__face');
-
 function prevImgHeight() {
+  const faceImg = document.querySelector('.services__face');
   let signWidth = Math.round((faceImg.offsetHeight / 100) * 23);
   document.documentElement.style.setProperty(
     '--faceSignWidth',
@@ -158,13 +157,10 @@ function prevImgHeight() {
 
 window.addEventListener('resize', prevImgHeight);
 
-window.load = setTimeout(() => {
-  prevImgHeight();
-
-  if (!faceImg.offsetHeight) {
-    prevImgHeight();
-  }
-}, 2000);
+window.addEventListener('load', function () {
+  //this.setTimeout  -  do not understand why vs recomend do it like that?
+  setTimeout(prevImgHeight, 1500);
+});
 
 (function () {
   const toFaceBtn = document.getElementById('toFace');
