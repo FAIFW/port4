@@ -632,12 +632,19 @@
           </div>
           <div class="services__main">
             <div class="services__face">
-              <img
-                class="services__face-picture"
-                loading="lazy"
-                src="./src/img/services/face-320.png"
-                alt="процедуры для лица"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./src/img/services/face-320.webp"
+                  alt="мои сертификаты и дипломы"
+                />
+                <img
+                  class="services__face-picture"
+                  loading="lazy"
+                  src="./src/img/services/face-320.png"
+                  alt="процедуры для лица"
+                />
+              </picture>
               <div class="services__face-btns">
                 <button class="toForehead"></button>
                 <button class="toMesotherapy"></button>

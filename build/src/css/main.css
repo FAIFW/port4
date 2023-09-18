@@ -1201,7 +1201,7 @@ body {
   animation: appearance linear 0.4s;
 }
 .services .services__face-picture {
-  display: inline-block !important;
+  display: inline-block;
   height: 43vh;
   min-height: 286px;
   -o-object-fit: contain;

@@ -28,9 +28,9 @@
     animation: appearance linear 0.4s;
 
     &-picture {
-      display: inline-block !important;
-      //width: 100%;
+      display: inline-block;
       height: 43vh;
+      //for landscape is needed:
       min-height: 286px;
       object-fit: contain;
       vertical-align: middle;
