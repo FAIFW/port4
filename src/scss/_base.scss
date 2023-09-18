@@ -1,6 +1,3 @@
-// font Playfair Display:
-//font-family: 'Playfair Display', serif;
-
 @font-face {
   font-family: 'Berold';
   src: local('Berold'), url('../font/berold.otf') format('otf'),
@@ -31,8 +28,6 @@ html {
   font-size: 14px;
   font-weight: 400;
   color: $mainTextColor;
-  //хуета:
-  //scrollbar-gutter: stable;
 }
 
 @media (min-width: 767px) {
