@@ -1147,9 +1147,6 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
-.reviews__slider {
-  background-color: black;
-}
 .reviews .swiper-slide {
   align-self: center;
 }
@@ -1163,6 +1160,7 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  vertical-align: middle;
 }
 .reviews .swipeIcon {
   margin: 0.5em auto;
@@ -1393,7 +1391,6 @@ body {
 .results__slider {
   margin: 0 auto;
   width: 83%;
-  background-color: black;
 }
 .results .swiper-slide {
   align-self: center;
