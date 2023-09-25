@@ -1550,6 +1550,9 @@ body {
 .footer .contact-badge {
   padding-top: 1em;
 }
+.footer .contact-badge__item {
+  padding-top: 1.5em;
+}
 .footer .contact-badge__map {
   padding: 1em 0em;
 }
