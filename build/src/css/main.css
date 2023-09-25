@@ -411,18 +411,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #8569af;
 }
 .modal__close span:first-child {
-  top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
-  transition: transform 0.2s;
 }
 .modal__close span:nth-of-type(2) {
-  top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
-  transition: transform 0.2s;
 }
 .modal__close button {
   cursor: pointer;
@@ -1554,7 +1549,20 @@ body {
 }
 .footer .contact-badge {
   padding-top: 1em;
-  height: 235px;
+}
+.footer .contact-badge__map {
+  padding: 1em 0em;
+}
+.footer .contact-badge__map iframe {
+  padding: 1em 0em;
+}
+.footer .contact-badge__path {
+  color: #8569af;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer .contact-badge__gift {
+  margin-top: 3em;
 }
 
 @media (min-width: 1023px) {
@@ -1649,4 +1657,16 @@ body {
 .modalLipstherapy .swipeIcon {
   padding: 1em 0em;
   margin: 0 auto;
+}
+
+.modalPath {
+  animation: appearance linear 0.4s;
+}
+.modalPath .h2 {
+  padding: 1.2em 0;
+}
+.modalPath img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */

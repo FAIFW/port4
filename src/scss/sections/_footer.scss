@@ -40,7 +40,24 @@
 
   .contact-badge {
     padding-top: 1em;
-    height: 235px;
+
+    &__map {
+      padding: 1em 0em;
+
+      iframe {
+        padding: 1em 0em;
+      }
+    }
+
+    &__path {
+      color: $fontTitleColor;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    &__gift {
+      margin-top: 3em;
+    }
   }
 }
 

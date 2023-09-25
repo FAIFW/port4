@@ -819,6 +819,35 @@ const renderLipstherapy = () => {
   closeBtn.addEventListener('click', closeModal);
 };
 
+const renderPath = () => {
+  renderModal();
+
+  modal.innerHTML = `
+    <div class="modalPath">
+      <div class="container">
+        <div class="modal__close">
+          <span></span>
+          <span></span>
+        </div>
+        <h2 class="h2">Как добраться до офиса </h2>
+        <picture>
+          <source
+          type="image/webp"
+          srcset="./src/img/footer/path.webp"
+          alt="как добраться до нашего офиса"
+        />
+          <img src="./src/img/footer/path.png" loading="lazy" alt="как добраться до нашего офиса">
+        </picture>
+      </div>
+    </div>
+    `;
+  const container = document.querySelector('.modalPath .container');
+
+  //this is unwanted mistake which can not be decided right now:
+  const closeBtn = modal.querySelector('.modal__close');
+  closeBtn.addEventListener('click', closeModal);
+};
+
 /*                           modals's functions                          */
 (function () {
   const services = document.getElementById('services');
@@ -835,4 +864,6 @@ const renderLipstherapy = () => {
   toNose.addEventListener('click', renderNosetherapy);
   const toLips = services.querySelector('.toLips');
   toLips.addEventListener('click', renderLipstherapy);
+  const toPath = document.querySelector('.contact-badge__path');
+  toPath.addEventListener('click', renderPath);
 })();
